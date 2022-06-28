@@ -6,7 +6,7 @@ public class Main {
         Printer<Dog> dogPrinter = new Printer<>(new Dog());
         dogPrinter.print();
 		
-		shout("Sachin", 111);
+	shout("Sachin", 111);
 
         List l2 = new ArrayList();  // UnType Safe : Different type elements can be added
         l2.add(new Cat());
@@ -14,7 +14,7 @@ public class Main {
         printList(l2);
     }
 	
-	private static <T, V> void shout(T key, V val) {
+     private static <T, V> void shout(T key, V val) {
         System.out.println(key + " -> " + val);
     }
 
